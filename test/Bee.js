@@ -3,9 +3,9 @@ describe('Bee class functionality', function() {
   verifyClass(Bee).followsPattern('pseudoclassical', {}, false);
 
   beforeEach(function() {
-    bee = new Bee();
+    bee = new Bee(5,"yellow","jelly");
   });
-
+  
   /*  Overwrite methods from superclass  */
 
   it('should have an `age` property that is set to `5`', function() {
